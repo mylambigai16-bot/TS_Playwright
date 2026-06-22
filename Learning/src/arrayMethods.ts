@@ -1,0 +1,13 @@
+let arr: Array<String> = ['apple','kiwi','mango','banana'];
+console.log(arr.sort())
+console.log(arr.pop())
+arr.push('papaya')
+console.log(arr);
+arr = arr.concat(['berry','jack']);
+console.log(arr);
+console.log(arr.indexOf('papaya'));
+console.log(arr.copyWithin(0,3,));
+console.log(arr.fill("no",3,));
+console.log(arr.shift());
+console.log(arr.splice(2,1));
+
