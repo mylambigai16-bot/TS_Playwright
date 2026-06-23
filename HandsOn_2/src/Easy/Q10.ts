@@ -8,4 +8,4 @@ for(let i:number=1; i<=val ; i++){
         process.stdout.write(i.toString() + " ")
     }
     console.log()
-}
+} 
