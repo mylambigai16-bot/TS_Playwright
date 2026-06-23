@@ -12,6 +12,7 @@
   "type": "module",
   "devDependencies": {
     "@types/node": "^26.0.0",
+    "@types/prompt-sync": "^4.2.3",
     "typescript": "^6.0.3"
   },
   "dependencies": {
