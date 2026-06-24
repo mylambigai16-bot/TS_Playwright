@@ -1,17 +1,18 @@
-import PromptSync from "prompt-sync";
+let count: number = 0;
 
-const prompt = PromptSync()
-let count:number = 0
+for (let i: number = 2; i < process.argv.length; i++) {
 
-while(true){
-    let num:number = Number(prompt("Enter the number: "))
-    if(num >= 0){
-        count += num
-    for(let i=0; i<num ; i++){
-        console.log("Hello")
+    let num: number = Number(process.argv[i]);
+
+    if (num < 0) {
+        break;
     }
+
+    count += num;
+
+    for (let j: number = 0; j < num; j++) {
+        console.log("Hello");
     }
-    else
-        break
 }
-console.log(count)
+
+console.log("Sum = " + count);

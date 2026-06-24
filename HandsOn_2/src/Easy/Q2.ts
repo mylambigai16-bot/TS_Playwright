@@ -1,7 +1,7 @@
-import PromptSync from "prompt-sync";
+let num: number = Number(process.argv[2]);
 
-const prompt = PromptSync();
-let num:number = Number(prompt("Enter the number: "));
-if(num%7 == 0){
-    console.log(`Yes the num ${num} is divisible by 7`)
+if (num % 7 === 0) {
+    console.log(`Yes the num ${num} is divisible by 7`);
+} else {
+    console.log(`No the num ${num} is not divisible by 7`);
 }

@@ -1,7 +1,4 @@
-import PromptSync from "prompt-sync";
-
-const prompt = PromptSync()
-let val:number = Number(prompt("Enter the number: "))
+let val: number = Number(process.argv[2]);
 
 for(let i:number=1; i<=val ; i++){
     for( let j=1; j<=i ; j++){

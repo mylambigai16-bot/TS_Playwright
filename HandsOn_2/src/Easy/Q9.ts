@@ -1,7 +1,4 @@
-import PromptSync from "prompt-sync";
-
-const prompt = PromptSync()
-let nu: number = Number(prompt('Enter the number: '))
+let nu: number = Number(process.argv[2]);
 let re:number
 let digit_sum = 0 
 while(nu != 0){
